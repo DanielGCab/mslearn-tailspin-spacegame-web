@@ -2,10 +2,10 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'MyLinuxAgent' 
+  name: 'MyAgentPool'
   demands:
     - npm
-
+    
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
